@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #708090;
+    background-size: 64px 128px;
+  }
+
+.main .container {
+    height: 560px;
+    width: 900px;
+    background-color: #0B001E; /* #fff;*/
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+    align-self: center;
+    position: relative;
+  }
+  @media (min-width: 1000px) {
+    .main .container {
+      box-shadow: 2px 2px 20px;
+    }
+  }
+
+  .main .container #chart{
+    background-color: #0B001E;
+  }
+/*background-color: #0B001E;*/
+
+
+  /* Linea leonardo */
+#leonardo {
+    stroke: Darkorange;
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: white;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+
+.xAxisGroup .domain .tick{
+    stroke: white;
+    stroke-width: 1;
+}
+
+/* Texto del eje x*/
+.tick{
+    stroke: slategray;
+    font-size: 1.2em;
+    font-family: 'Quicksand', sans-serif;
+    
+
+}
+
+.tick #text{
+    stroke: white;
+    color: blueviolet;
+}
+
+.tick #line{
+    stroke: white;
+    color: blueviolet;
+}
+
+
+/*
+.tooltip {
+    font-family: Arial, helvetica, sans-serif;
+    font-size: 10px;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 4px;
+    color: #FFFFFF;
+    border-radius: 4px;
+}*/
+
+.tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    pointer-events: none; /* Evita que el tooltip interfiera con los eventos del mouse */
+}
+
+
+/*
+
+BarRafaeli
+BlakeLively
+ErinHeatherson,22
+ToniGarrn
+KellyRohrbach
+NinaAgdal
+CamilaMorrone
